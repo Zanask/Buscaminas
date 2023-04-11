@@ -1,0 +1,122 @@
+html { 
+    margin: 0px; 
+}
+
+body{
+    background-color: #0B5B67;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.container {
+    background-color: #F8DD8E;
+    height: 90vh;
+    width: 60vw;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #0B5B67;
+    padding: 0px 10px;
+    margin: 10px 0px;
+}
+
+select{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #0B5B67;
+    padding: 0px 10px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+span{
+    color: red;
+    font-size: 12px;
+}
+
+#juego{ 
+    text-align: center;
+}
+
+#tablero{
+    display:grid;
+    grid-template-columns: repeat(12, 32px);
+    grid-template-rows: repeat(12, 32px);
+}
+
+#tablero div{
+    background-color: #0B5B67;
+    border-left: 2px solid #147584;
+    border-top: 2px solid #147584;
+    border-right: 2px solid #053e47;
+    border-bottom: 2px solid #053e47;
+    text-align: center;
+    line-height: 32px;
+}
+
+#tablero div:hover{
+    background-color: #042a30;
+}
+
+button{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #0B5B67;
+    background-color: #0B5B67;
+    color: white;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+button:hover{
+    background-color: #04323a;
+    color: white;
+    cursor: pointer;
+}
+
+.celda-verde{
+    background-color: #00ff2a !important;
+}
+
+.celda-roja{
+    background-color: #ff0000 !important;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    border: 5px solid #0B5B67;
+}
+
+tr{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+td{
+    text-align: center;
+    padding: 10px;
+}

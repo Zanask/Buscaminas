@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Martinez Buscaminas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/hola.js"></script>
+</head>
+<body>
+    <div class="container">
+        <section id="menu">
+            <h1>Buscaminas</h1>
+            <label for="name">Inserta tu Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Nombre"><br>
+            <label for="name">Cuantas Bombas Quieres?</label>
+            <select name="bombas" id="bombas">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+            </select><br>
+            <button id="jogo" class="boton" onclick="juego()">Jugar</button>
+            <button id="rankings" class="boton" onclick="verRankings()">Ver Rankings</button>
+        </section>
+        <section id="juego" style="display: none;">
+            <h2>Que empiece la Guerra!</h2>
+            <p id="intentos"></p>
+            <p id="countdown"></p>
+            <div id="tablero">
+                
+            </div>
+        </section>
+        <section id="win" style="display: none;">
+            <h2>Has Ganado!</h2>
+            <p id="intentosWin"></p>
+            <p id="tiempoWin"></p>
+            <button id="jugar" class="boton" onclick="juego()">Jugar</button>
+            <button id="rankings" class="boton" onclick="verRankings()">Ver Rankings</button>
+        </section>
+        <section id="over" style="display: none;">
+            <h2>Has Perdido!!</h2>
+            <button id="reiniciar" class="boton" onclick="reiniciar()">Reiniciar</button>
+        </section>
+        <section id="ranking" style="display: none;">
+            <h2>Rankings</h2>
+            <table id="tabla">
+
+            </table>
+            <button id="reiniciar" class="boton" onclick="reiniciar()">Reiniciar</button>
+        </section>
+    </div>
+</body>
+</html>
